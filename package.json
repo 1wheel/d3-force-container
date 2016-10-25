@@ -1,7 +1,7 @@
 {
   "name": "d3-force-container",
-  "version": "1.0.3",
-  "description": "A bounding box collision detection constraint for d3 forceSimulation.",
+  "version": "0.0.1",
+  "description": "constrain particles to an area for forceSimulation in d3v4.",
   "keywords": [
     "d3",
     "d3-module",

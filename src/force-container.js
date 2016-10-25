@@ -1,5 +1,5 @@
-export default function (bbox) {
-  var nodes, strength = 1; 
+export default function (bbox){
+  var nodes, strength = 1;;
 
   if (!bbox || bbox.length < 2) bbox = [[0, 0], [100, 100]]
 
@@ -8,8 +8,8 @@ export default function (bbox) {
     var i,
         n = nodes.length,
         node,
-        sx = 0,
-        sy = 0;
+        x = 0,
+        y = 0;
 
     for (i = 0; i < n; ++i) {
       node = nodes[i], x = node.x, y = node.y;
@@ -33,4 +33,4 @@ export default function (bbox) {
   }
 
   return force;
-}}
+}
