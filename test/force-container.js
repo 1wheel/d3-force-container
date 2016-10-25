@@ -1,7 +1,7 @@
 var tape = require("tape"),
     foo = require("../");
 
-tape("Oh, testing", function(test) {
+tape("testing 1 2 3", function(test) {
   test.equal(true, true);
   test.end();
 });

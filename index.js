@@ -1,1 +1,1 @@
-export {default as bboxCollide} from "./src/bboxCollide";
+export {default as forceContainer} from "./src/forceContainer";

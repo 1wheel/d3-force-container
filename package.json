@@ -1,5 +1,5 @@
 {
-  "name": "d3-bboxCollide",
+  "name": "d3-force-container",
   "version": "1.0.3",
   "description": "A bounding box collision detection constraint for d3 forceSimulation.",
   "keywords": [
@@ -10,20 +10,24 @@
     "constraint",
     "collide"
   ],
-  "license": "Unlicense",
-  "main": "build/d3-bboxCollide.js",
-  "author": "Elijah Meeks",
+  "license": "MINT",
+  "main": "build/d3-force-container.js",
+  "author": {
+    "name": "Adam Pearce",
+    "email": "1wheel@gmail.com",
+    "url": "http://roadtolarissa.com/"
+  },
   "jsnext:main": "index",
-  "homepage": "https://github.com/emeeks/d3-bboxCollide",
+  "homepage": "https://github.com/1wheel/d3-force-container",
   "repository": {
     "type": "git",
-    "url": "https://github.com/emeeks/d3-bboxCollide.git"
+    "url": "https://github.com/1wheel/d3-force-container.git"
   },
   "scripts": {
-    "pretest": "rm -rf build && mkdir build && rollup -f umd -n d3 -g d3-quadtree:d3 -o build/d3-bboxCollide.js -- index.js",
+    "pretest": "rm -rf build && mkdir build && rollup -f umd -n d3 -o build/d3-force-container.js -- index.js",
     "test": "tape 'test/**/*-test.js'",
-    "prepublish": "npm run test && uglifyjs build/d3-bboxCollide.js -c -m -o build/d3-bboxCollide.min.js",
-    "postpublish": "zip -j build/d3-bboxCollide.zip -- LICENSE README.md build/d3-bboxCollide.js build/d3-bboxCollide.min.js"
+    "prepublish": "npm run test && uglifyjs build/d3-force-container.js -c -m -o build/d3-force-container.min.js",
+    "postpublish": "zip -j build/d3-force-container.zip -- LICENSE README.md build/d3-force-container.js build/d3-force-container.min.js"
   },
   "devDependencies": {
     "rollup": "0.27",
@@ -31,6 +35,5 @@
     "uglify-js": "2"
   },
   "dependencies": {
-    "d3-quadtree": "1.0.1"
   }
 }
